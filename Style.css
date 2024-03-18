@@ -1,0 +1,651 @@
+body {
+    font-family:"Inter";
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+  }
+  
+  :root {
+    --primerly: #f4f5f7;
+    --secondery: #555;
+    
+    
+  }
+  
+  i {
+    color: var(--secondery);
+    cursor: pointer;
+  }
+  
+  #Delete i {
+    color: rgb(154, 31, 31);
+  }
+  
+  #Delete {
+    color: rgb(154, 31, 31);
+  }
+  
+  #b2c {
+    background-color: #fef7d2;
+    color: #b4ad82;
+  }
+
+  .nocontact {
+    background-color: #f3a1c4;
+    color: rgb(154, 31, 31);
+}
+
+  
+  #b2b {
+    background-color: #f8eec0;
+    color: #b4ae81;
+  }
+  
+  #Publising {
+    background-color: #f3def0;
+    color: #9e7b8f;
+  }
+  
+  #Automation {
+    background-color: #f6ecfc;
+    color: #6d26c9;
+  }
+  
+  #Finence {
+    background-color: #fdf4d0;
+    color: #a39363;
+  }
+  
+  #Marketplace {
+    background-color: #dbf5e6;
+    color: #719480;
+  }
+  
+  #E-commerse {
+    background-color: #f3be8d;
+    color: #977f69;
+  }
+  
+  #today {
+    background-color: #dbf5e6;
+    color: #719480;
+  }
+  #tommorow {
+    background-color: #d8f4f8;
+    color: #7198a6;
+  }
+  
+  #Nocontact {
+    background-color: #9a444d;
+    color: #992238;
+  }
+  
+  .Next-Month {
+    background-color: #f2f3f5;
+    color: #adadad;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidepanel {
+    width: 27%;
+    padding-left: 0px;
+    margin: 8px;
+    border: var(--primerly) solid 3px;
+    border-radius: 5px;
+  }
+  
+  #userprofile {
+    display: flex;
+    /* background-color: #555; */
+    width: 100%;
+    padding: 10px;
+    margin-left: 3px;
+    margin-top: 8px;
+  }
+  
+  .logo {
+    height: 38px;
+    width: 38px;
+    float: left;
+    margin-top: 8px;
+  }
+  
+  .user-logo {
+    height: 70%;
+    width: 40%;
+    margin-right: 20px;
+    float: right;
+    border-radius: 60%; 
+}
+
+  
+  #userprofile p {
+    margin-left: 50px;
+  }
+  
+  .sidehead {
+    padding: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+  
+  .sidesubhead {
+    padding: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .sidesection {
+    /* height: 100%; */
+    padding: 4px 10px 0 13px;
+    font-size: 15px;
+    float: left;
+  }
+  
+  .sidesection i{
+    padding-right: 9px;
+  }
+  .sidesection button {
+    background: none;
+    border-radius: 6px;
+    margin: 1px 0;
+    padding: 9px 0 9px 9px;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    height: 33px;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .sidesection .folderSection{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 0px;
+    font-weight: 800;
+  }
+  
+  .sidesection .teams li a span {
+    float: right; /* Align to the right */
+    margin-right: 10px; /* Adjust as needed */
+     border-radius: 3px; 
+    padding: 0px 3px;
+    background-color:#efefef ;
+  }
+  
+  .sidesection .teams:hover li a span {
+    background-color: rgb(255, 255, 255);
+  }
+  .sidesection button:hover {
+    background-color: #f1f3f8;
+  
+  }
+  
+  .sidesection li{
+    padding: 5px 0px;
+  }
+  
+  .sidesection .createTask {
+    /* background-color: #ffffff; */
+    border: #f1f3f8 solid 2px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    height: 37px;
+  }
+  
+  .sidesection .createTask p {
+    display: inline;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--secondery);
+  }
+  
+  .sidesection .createTask:hover {
+    background-color: var(--secondery);
+  }
+  
+  .sidesection .createTask:hover p {
+    color: var(--primerly);
+  }
+  
+  
+  .sidesection .createTask:hover i{
+    color: var(--primerly);
+  }
+  
+  .teams {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .folderSection {
+    font-size: 12px;
+    color: var(--secondery);
+    font-weight: 600;
+  }
+  
+  .fa-plus {
+    float: right;
+    margin-right: 12px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .folder button {
+    background-color: var(--primerly);
+  }
+  
+  .folder button:hover {
+    background: none;
+    border: var(--primerly) solid 2px;
+    border-radius: 4px;
+  }
+  
+  .folder button p {
+    display: inline;
+  }
+  
+  .fa-caret-down {
+    margin-right: 12px;
+    float: right;
+  }
+  
+  .folder .createTask {
+    border: none;
+    margin-top: 2px;
+    margin-left: 8px;
+  }
+  .sidepanel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidepanel .folder ul li {
+    margin-left: 25px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .sidepanel ul li a {
+    text-decoration: none;
+    color: var(--secondery);
+  }
+  
+  .otherTeams {
+    margin-top: 30px;
+  
+  }
+  
+  .otherTeams .extraTasks button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .trial {
+    background: var(--primerly);
+    border-radius: 6px;
+    height: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .trial p {
+    display: inline;
+  }
+  
+  .trial button {
+    background: var(--secondery);
+    width: 100%;
+    padding: 9px;
+    margin: 0;
+  }
+  
+  .trial .trialBill {
+    float: right;
+  
+  }
+  
+  .trial .trialBill a {
+    color: #f1f3f8;
+    font-size: 14px;
+    font-family: "Inter";
+  }
+  
+  .trial button:hover {
+    background-color: #1aa858;
+    color: #7198a6;
+  }
+  
+  /* Main content */
+  
+  .main-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .main-table th,
+  .main-table td {
+    border: 3px solid var(--primerly);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .maincontent {
+    flex: 1;
+    margin: -15px 0px;
+  
+  }
+  
+  
+  .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  
+  .searchBox {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .searchIcon{
+    margin-right: 5px;
+  
+  }
+  
+  .Search-tab{
+    display: flex;
+    align-items: center;
+    margin: 10px 8px;
+    border: 2px solid var(--primerly);
+    border-radius: 4px;
+    padding: 4px;
+  
+  }
+  
+  .fa-search {
+    color: var(--secondery);
+  }
+  
+  
+  #searchInput {
+    outline-style: none;
+    border: none;
+    flex: 1; /* Takes up remaining space */
+    width: 10vw;
+  }
+  
+  .sideIcon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat,
+  .setting {
+    justify-content: space-between;
+    border: 2px solid var(--primerly);
+    padding: 4px;
+    margin: 0 8px;
+    border-radius: 4px;
+    height: auto;
+    width: auto;
+    /* padding-top: 10px; */
+    color: var(--secondery);
+    font-size: 18px;
+  }
+  
+  
+  
+  
+  .main-container {
+    /* background-color: rgb(38, 111, 175); */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .left-category,
+  .right-category {
+    display: inline;
+    margin-bottom: 10px;
+    border: 1px solid var(--primerly);
+    background: none;
+  }
+  
+  .left-category button,
+  .right-category button {
+    border: 2px solid var(--primerly);
+    background: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .right-category {
+    float: right;
+  }
+  
+  .fa-staylinked,
+  .fa-arrow-down-wide-short,
+  .fa-filter,
+  .fa-headse,
+  .fa-cloud-arrow-up {
+    margin-right: 4px;
+  }
+  
+  .main-container .fa-caret-down {
+    margin-left: 8px;
+    margin-right: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  th,
+  td {
+    border: 2px solid var(--primerly);
+    border-radius: 4px;
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  th {
+    padding: 10px;
+  }
+  
+  .fa-square-check {
+    font-size: 13px;
+    /* color: #777; */
+  }
+  
+  .table-Desc {
+    width: 22%;
+  }
+  
+  .user-Img-Container {
+    width: 17%;
+  }
+  
+  .main-container .userImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    margin-left: 6px;
+  }
+  
+  .user-Img-Container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .user1 {
+    left: 0px;
+    z-index: 10;
+  }
+  
+  .user2 {
+    left: 20px;
+    z-index: 11;
+  }
+  
+  .user3 {
+    left: 40px;
+    z-index: 12;
+  }
+  
+  .user4 {
+    left: 60px;
+    z-index: 13;
+  }
+  
+  .user5 {
+    left: 80px;
+    z-index: 14;
+  }
+  
+  .user6 {
+    left: 100px;
+    z-index: 15;
+  }
+  
+  .main-container tbody img {
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    border-radius: 3px;
+  }
+  
+  .brand {
+    display: flex;
+  }
+  
+  .brand-logo,
+  .brand-Name {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .brand-logo {
+    margin-top: 26px;
+  }
+  
+  .brand-Name {
+    margin-left: 6px;
+    margin-top: 30px;
+  }
+  
+  .table-Desc {
+    font-weight: 500;
+  }
+  .table-category {
+    display: flex;
+    background-color: #f1ebf4;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    width: fit-content;
+    color: #9280b3;
+  }
+  
+  .tag {
+    display: inline-flex;
+    background-color: #f0f0f0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    width: fit-content;
+    margin-bottom: 2px;
+    margin-top: 1px;
+  }
+  
+  #tag-head {
+    max-width: 170px;
+  }
+  
+  .table-category {
+    display: inline-flex;
+  }
+  
+  .time {
+    background-color: #dff8ec;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    width: fit-content;
+    color: green;
+  }
+  
+  .botoom-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .botoom-btn button {
+    border: 2px solid var(--primerly);
+    background: none;
+    padding: 6px 10px 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  /* sidepanel Responsive */
+  
+  @media screen and (max-width: 768px) {
+    .sidepanel {
+      width: 10px;
+      border: none;
+    }
+    .logo,
+    .sidehead,
+    .sidesubhead,
+    .folder,
+    .sidesection,
+    .tag,
+    .Member,
+    #tag-head,
+    .Head-tag {
+      display: none;
+    }
+  
+    .user-logo {
+      position: absolute;
+      margin-left: 0;
+      left: 8;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .disc-head,
+    .table-Desc {
+      display: none;
+    }
+  }
+   /* Media queries */
+    @media screen and (max-width: 768px) {
+      .sidepanel {
+        width: 10px;
+        border: none;
+      }
+    }
+    

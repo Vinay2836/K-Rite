@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-Development Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {}
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-sm">
+    <div class="flex">
+        <div class="w-[23%] sm:w-[23%] border rounded-2xl p-4 m-2">
+            <div class="flex justify-between sm:flex-row mb-8">
+                <div class="flex">
+                    <i class="fa-solid fa-folder-open bg-gray-800 text-white rounded-lg w-10 h-10 flex justify-center items-center p-2"></i>
+                    <div class="ps-2">
+                        <p class="text-sm text-gray-500">INC</p>
+                        <p>InnovateHub</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center sm:mt-0">
+                    <i class="fa-solid fa-user-secret"></i>
+                </div>
+            </div>
+
+            <div class="border rounded-2xl p-2 mb-4">
+                <div class="flex justify-between p-2">
+                    <div class="flex">
+                        <i class="fa-solid fa-pen-nib flex items-center pe-2"></i>
+                        <p>Design Team</p>
+                    </div>
+
+                    <div class="bg-gray-100 border border-gray-200 rounded-lg px-2">x + 1</div>
+                </div>
+
+                <div class="flex justify-between p-2">
+                    <div class="flex">
+                        <i class="fa-solid fa-bullhorn flex items-center pe-2"></i>
+                        <span class="flex items-center whitespace-nowrap">Marketing Team</span>
+                    </div>
+
+                    <div class="bg-gray-100 border border-gray-200 rounded-lg whitespace-nowrap px-2 ml-2">x + 2</div>
+                </div>
+
+                <div class="flex justify-between p-2">
+                    <div class="flex">
+                        <i class="fa-solid fa-code flex items-center pe-2"></i>
+                        <span class="flex items-center whitespace-nowrap">Development Team</span>
+                    </div>
+
+                    <div class="bg-gray-100 border border-gray-200 rounded-lg whitespace-nowrap px-2 ml-2">x + 3</div>
+                </div>
+
+                <div class="flex justify-between p-2">
+                    <div class="flex">
+                        <i class="fa-regular fa-square-plus flex items-center text-gray-500 pe-2"></i>
+                        <span class="text-gray-500">Create a team</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4">
+                <div class="flex justify-between text-gray-500">
+                    <p>FOLDERS</p>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div>
+                    <div class="flex justify-between py-2 sm:flex sm:justify-between">
+                        <div class="menu-item">
+                            <i class="fa-regular fa-folder"></i>
+                            <span class="px-1">Products</span>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down toggle-dropdown"></i>
+                    </div>
+
+                    <ul class="hidden">
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Roadmap</a></li>
+                        <li><a class="py-1 px-4 block" href="#">Feedback</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Performance</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Team</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Analytics</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Performance</a></li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fa-regular fa-square-plus flex items-center text-gray-500"></i>
+                            <a class="rounded-b py-1 px-2 block" href="#">Add a new tab</a>
+                        </li>
+                    </ul>
+
+                    <div class="flex justify-between py-2 sm:flex sm:justify-between">
+                        <div class="menu-item ">
+                            <i class="fa-regular fa-folder"></i>
+                            <span class="px-1">Sales</span>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down toggle-dropdown"></i>
+                    </div>
+
+                    <ul class="hidden">
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Roadmap</a></li>
+                        <li><a class="py-1 px-4 block" href="#">Feedback</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Performance</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Team</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Analytics</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Performance</a></li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fa-regular fa-square-plus flex items-center text-gray-500"></i>
+                            <a class="rounded-b py-1 px-2 block" href="#">Add a new tab</a>
+                        </li>
+                    </ul>
+
+                    <div class="flex justify-between py-2 sm:flex sm:justify-between">
+                        <div class="menu-item">
+                            <i class="fa-regular fa-folder"></i>
+                            <span class="px-1">Design</span>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down toggle-dropdown"></i>
+                    </div>
+
+                    <ul class="hidden">
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Roadmap</a></li>
+                        <li><a class="py-1 px-4 block" href="#">Feedback</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Performance</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Team</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Analytics</a></li>
+                        <li><a class="rounded-b py-1 px-4 block" href="#">Performance</a></li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fa-regular fa-square-plus flex items-center text-gray-500"></i>
+                            <a class="rounded-b py-1 px-2 block" href="#">Add a new tab</a>
+                        </li>
+                    </ul>
+
+                    <div class="flex justify-between py-2 sm:flex sm:justify-between">
+                        <div class="menu-item">
+                            <i class="fa-regular fa-folder"></i>
+                            <span class="px-1">Office</span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 sm:flex sm:justify-between">
+                        <div class="menu-item">
+                            <i class="fa-regular fa-folder"></i>
+                            <span class="px-1">Legal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-80">
+                <div class="flex items-center py-2 gap-2 sm:flex sm:flex-row sm:justify-between">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Invite teammates</span>
+                </div>
+
+                <div class="flex items-center py-2 gap-2 sm:flex sm:flex-row sm:justify-between">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>Help and first steps</span>
+                </div>
+
+                <div
+                    class="flex justify-between items-center bg-gray-100 border border-gray-200 rounded-lg py-2 mt-2 gap-2">
+                    <div>
+                        <i class="fa-solid fa-stopwatch-20 px-1"></i>
+                        <span>days left on trial</span>
+                    </div>
+
+                    <span class="bg-gray-900 text-white rounded-lg p-1 m-1">Add billing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[95%] border rounded-2xl p-4 my-2 me-2">
+            <div class="flex justify-between border-b pb-4 mb-4">
+                <span class="text-xl">Products</span>
+
+                <div class="flex items-center">
+                    <div class="flex items-center rounded-lg shadow-md px-2 py-1 mx-2">
+                        <i class="fa-solid fa-magnifying-glass p-1"></i>
+                        <input class="px-1" id="searchInput" placeholder="Search for .." aria-label="Search" autocomplete="off">
+                    </div>
+
+                    <i class="fa-regular fa-copy border rounded-lg p-2 mx-2"></i>
+
+                    <i class="fa-solid fa-gear border rounded-lg p-2 mx-2"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-between">
+                <div class="flex">
+                    <div class="border rounded-lg p-1 mx-1">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <span>All brands</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="border rounded-lg p-1 mx-2">
+                        <span>Desks</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="border rounded-lg p-1 mx-2">
+                        <span>Tags</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="border rounded-lg text-gray-700 p-1 mx-2">
+                        <i class="fa-solid fa-arrow-up-a-z"></i>
+                        <span>Sort</span>
+                    </div>
+
+                    <div class="border rounded-lg text-gray-700 p-1 mx-2">
+                        <i class="fa-solid fa-filter"></i>
+                        <span>Filter</span>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="border rounded-lg p-1 mx-2">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span>Meeting</span>
+                    </div>
+
+                    <div class="border rounded-lg p-1 mx-2">
+                        <i class="fa-solid fa-circle-down"></i>
+                        <span>Import/Export</span>
+                    </div>
+                </div>
+            </div>
+
+            <table class="border p-4 mt-8 mx-2">
+                <thead>
+                    <tr class="text-gray-700">
+                        <td class="border p-2">
+                            <div class="flex justify-between items-center">
+                                <div class="flex justify-between items-center">
+                                    <input type="checkbox">
+                                    <span class="p-2" id="selectedCount">Brand</span>
+                                </div>
+
+                                <i class="fa-regular fa-square-plus ms-16"></i>
+                            </div>
+                        </td>
+                        <td class="border p-2">Description</td>
+                        <td class="border p-2">Members</td>
+                        <td class="border p-2">Categories</td>
+                        <td class="border p-2">Tags</td>
+                        <td class="border p-2">Next meeting</td>
+                        <td class="border p-2">
+                            <i class="fa-regular fa-square-plus"></i>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <input class="me-2" type="checkbox">
+                                    <img width="20" height="20"
+                                        src="https://img.icons8.com/external-others-inmotus-design/67/external-W-mobile-keyboard-others-inmotus-design-2.png"
+                                        alt="external-W-mobile-keyboard-others-inmotus-design-2" />
+                                    <span class="px-2" id="selectedCount">Wix</span>
+                                </div>
+
+                                <div class="text-gray-700">
+                                    <i class="fa-regular fa-clone"></i>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">Develop a personalized..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-purple-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-green-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-blue-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-pink-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-[#800080] bg-[#C8A2C8] hover:bg-[#E0C4E0] text-[#800080] rounded-lg px-1">Automation</span>
+                        </td>
+                        <td class="border p-2">
+                            <span
+                                class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1">#DigitalTransformation</span>
+                        </td>
+                        <td class="flex border whitespace-nowrap p-2">
+                            <span class="border border-[#043927] bg-[#98FB98] text-[#043927] hover:bg-[#6fd070] hover:text-[#022c18] rounded-lg px-1">In 30 minutes</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex items-center">
+                                <input class="me-2" type="checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                    viewBox="0,0,256,256" style="fill:#FAB005;">
+                                    <g fill="#94d82d" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                                    </g>
+                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M22.83984,2.03516c-3.18069,-0.08666 -6.5143,4.15586 -8.31055,10.68555l-5.64453,1.83984c-0.367,0.12 -0.63359,0.43927 -0.68359,0.82226l-3.44531,26.81055c-0.067,0.525 0.28564,1.01138 0.80664,1.10938l24.06836,4.58008l1.85742,-40.68555l-1.11133,0.36133c-0.663,-2.444 -1.90311,-3.98108 -3.53711,-4.33008c-0.495,-0.108 -0.9735,-0.08575 -1.4375,0.03125c-0.557,-0.588 -1.19869,-0.99339 -1.92969,-1.15039c-0.21019,-0.04488 -0.42077,-0.06844 -0.63281,-0.07422zM22.7207,4.03711c0.11516,-0.00269 0.22825,0.00667 0.33594,0.0293c0.171,0.037 0.33609,0.11284 0.49609,0.21484c-1.985,1.697 -3.50269,4.9173 -4.30469,6.9043l-2.40039,0.78125c1.635,-5.025 4.14571,-7.8894 5.87305,-7.92969zM26.65625,5.26758c0.768,0.317 1.41531,1.34916 1.82031,2.91016l-1.02344,0.33398c-0.16,-1.238 -0.42387,-2.33414 -0.79687,-3.24414zM24.75586,5.91797c0.365,0.849 0.63062,1.94766 0.76563,3.22266l-3.73047,1.21484c1.013,-2.15 2.05684,-3.6255 2.96484,-4.4375zM33.48242,7.39648l-1.8457,40.41016l12.58008,-2.7832c0.512,-0.113 0.84844,-0.60214 0.77344,-1.11914c-1.601,-11.097 -4.64031,-32.20309 -4.69531,-32.62109c-0.011,-0.1 -0.03617,-0.19801 -0.07617,-0.29101c-0.196,-0.45 -0.55044,-0.77255 -1.02344,-0.93555c-0.092,-0.031 -0.20183,-0.04874 -0.29883,-0.05274c-0.222,-0.009 -2.1942,-0.16252 -3.0332,-0.22852c-0.686,-0.701 -2.0027,-2.04256 -2.3457,-2.35156c-0.011,-0.011 -0.02416,-0.01734 -0.03516,-0.02734zM22.71875,18.02344c2.064,0 3.16198,0.64873 3.20898,0.67773c0.197,0.119 0.28584,0.36008 0.21484,0.58008l-1.51172,4.66016c-0.046,0.142 -0.15106,0.25555 -0.28906,0.31055c-0.14,0.058 -0.29578,0.04656 -0.42578,-0.02344c-0.013,-0.007 -1.28577,-0.68945 -2.75977,-0.68945c-1.783,0 -2.04883,0.91208 -2.04883,1.45508c0,0.589 0.77292,1.1727 1.66992,1.8457c1.587,1.192 3.75977,2.82361 3.75977,6.09961c0,4.104 -2.55489,6.97266 -6.21289,6.97266c-4.16,0 -6.2548,-2.59117 -6.3418,-2.70117c-0.101,-0.127 -0.13389,-0.29713 -0.08789,-0.45313l1.0625,-3.57227c0.049,-0.163 0.17975,-0.29089 0.34375,-0.33789c0.163,-0.044 0.34075,-0.00748 0.46875,0.10352c0.02,0.018 1.95719,1.71094 3.49219,1.71094c0.893,0 1.12891,-0.71575 1.12891,-1.09375c0,-0.98 -0.717,-1.57703 -1.625,-2.33203c-1.254,-1.042 -2.8125,-2.3393 -2.8125,-5.1543c0,-3.881 2.70548,-8.05664 8.64648,-8.05664c0.04,0 0.07914,-0.00195 0.11914,-0.00195z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="px-2" id="selectedCount">Shopify</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">Develop a cloud-based..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-orange-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-yellow-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-blue-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex items-center p-2">
+                            <span
+                                class="border border-[#8B4000] bg-[#FFD580] hover:bg-[#FFE8B3] text-[#8B4000] rounded-lg whitespace-nowrap px-1 m-1">E-Commerce</span>
+                            <span
+                                class="border border-[#8B8000] bg-[#FFEA00] hover:bg-[#FFF7AD] text-[#8B8000] rounded-lg px-1 m-1">B2B</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#OnlineShopping</span>
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-2 m-1">#DigitalTransformation</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span
+                                class="border border-[#151B54] bg-[#82CAFF] text-[#151B54] hover:bg-[#a4d8ff] rounded-lg px-1">Tomorrow</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex items-center">
+                                <input class="me-2" type="checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                    viewBox="0,0,256,256" style="fill:#FAB005;">
+                                    <g fill="#dedd00" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                                    </g>
+                                    <g fill="#00003c" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(8,8)">
+                                            <path
+                                                d="M14.72852,4.00781c-4.53127,0.33396 -12.78267,10.27744 -9.62305,12.94531l0.78906,0.66992c-0.213,0.571 -0.28775,1.18502 -0.21875,1.79102c0.18,1.785 1.92338,3.23052 3.60937,3.22852c3.086,7.113 14.32052,7.12416 17.22852,0.16016c0.092,-0.24 0.48633,-1.31758 0.48633,-2.26758c0,-0.95 -0.53977,-1.34961 -0.88477,-1.34961c-0.179,-0.627 -0.29472,-0.69914 -0.51172,-0.99414c0.131,-0.196 0.81694,-1.2835 -0.16406,-2.3125c-0.556,-0.584 -1.66383,-0.98675 -2.04883,-1.09375c-0.08,-0.609 0.24861,-3.1385 -1.15039,-4.4375c1.111,-1.151 1.76177,-2.41881 1.75977,-3.50781c-0.003,-2.093 -2.52927,-2.72702 -5.69727,-1.41602l-0.67187,0.28516c-0.003,-0.003 -1.21442,-1.18908 -1.23242,-1.20508c-0.45138,-0.39375 -1.0226,-0.5438 -1.66992,-0.49609zM15.14063,4.87305c0.12981,0.00629 0.25306,0.02583 0.36719,0.05664c0.297,0.084 1.2793,1.22266 1.2793,1.22266c0,0 -1.82558,1.01183 -3.51758,2.42383c-2.281,1.757 -4.00316,4.30913 -5.03516,7.07813c-0.81,0.158 -1.52589,0.61791 -1.96289,1.25391c-0.261,-0.218 -0.74703,-0.64173 -0.83203,-0.80273c-0.695,-1.328 0.7603,-3.90242 1.7793,-5.35742c2.36063,-3.36938 5.97477,-5.96934 7.92188,-5.875zM18.32617,8.14258c0.023,-0.002 0.04097,0.01706 0.04297,0.03906c0.001,0.014 -0.00463,0.02616 -0.01562,0.03516c-0.154,0.119 -0.29311,0.25906 -0.41211,0.41406c-0.013,0.018 -0.00823,0.04169 0.00977,0.05469c0.007,0.005 0.01444,0.00681 0.02344,0.00781c0.658,0.005 1.58441,0.23522 2.19141,0.57422c0.041,0.023 0.0128,0.1018 -0.0332,0.0918c-3.718,-0.852 -6.58041,0.99255 -7.19141,1.43555c-0.019,0.012 -0.04269,0.00533 -0.05469,-0.01367c-0.01,-0.015 -0.00905,-0.03288 0.00195,-0.04687h-0.00391c0.895,-1.034 1.99738,-1.9325 2.98438,-2.4375c0.019,-0.011 0.04173,-0.00533 0.05273,0.01367c0.007,0.012 0.007,0.02606 0,0.03906c-0.078,0.142 -0.22934,0.44578 -0.27734,0.67578c-0.005,0.022 0.00925,0.04383 0.03125,0.04883c0.011,0.003 0.02225,0.00014 0.03125,-0.00586c0.614,-0.419 1.68314,-0.86778 2.61914,-0.92578zM21.50781,11.36133c0.12375,0.0205 0.24356,0.06577 0.35156,0.13477c0.535,0.355 0.60872,1.21475 0.63672,1.84375c0.016,0.359 0.05922,1.22856 0.07422,1.47656c0.034,0.57 0.18428,0.65105 0.48828,0.74805c0.171,0.056 0.32755,0.09806 0.56055,0.16406c0.706,0.198 0.97419,0.50272 1.24219,0.76172c0.136,0.134 0.22591,0.30709 0.25391,0.49609c0.083,0.608 -0.32297,1.2555 -1.79297,1.9375c-2.497,1.159 -5.00809,0.77147 -5.37109,0.73047c-1.077,-0.145 -1.69092,1.24817 -1.04492,2.20117c1.21,1.786 6.54184,1.06938 8.08984,-1.14062c0.037,-0.053 0.00594,-0.08669 -0.03906,-0.05469c-2.233,1.528 -5.18623,2.04263 -6.86523,1.39063c-0.255,-0.099 -0.78852,-0.34362 -0.85352,-0.89062c2.331,0.721 3.79492,0.03906 3.79492,0.03906c0,0 0.1087,-0.15072 -0.0293,-0.13672c0,0 -1.9108,0.28209 -3.7168,-0.37891c0.332,-1.078 1.44234,0.32572 5.15234,-0.73828c0.817,-0.234 1.74212,-0.59095 2.57813,-1.25195c0.247,0.257 0.4563,0.74931 0.5293,1.19531c0.196,-0.035 0.76133,-0.0292 0.61133,0.9668c-0.176,1.062 -0.62577,1.92475 -1.38477,2.71875c-0.474,0.514 -1.03902,0.93609 -1.66602,1.24609c-0.349,0.183 -0.71194,0.33598 -1.08594,0.45898c-2.86,0.934 -5.79033,-0.09283 -6.73633,-2.29883c-0.077,-0.168 -0.13945,-0.34248 -0.18945,-0.52148c-0.403,-1.454 -0.06019,-3.19888 1.00781,-4.29687c0.066,-0.07 0.13281,-0.15186 0.13281,-0.25586c-0.009,-0.089 -0.04552,-0.17319 -0.10352,-0.24219c-0.374,-0.541 -1.66625,-1.46495 -1.40625,-3.25195c0.187,-1.283 1.30847,-2.18681 2.35547,-2.13281l0.26758,0.01563c0.453,0.027 0.84866,0.08461 1.22266,0.09961c0.625,0.027 1.18656,-0.06319 1.85156,-0.61719c0.225,-0.187 0.40498,-0.34939 0.70898,-0.40039c0.124,-0.031 0.25125,-0.03613 0.375,-0.01562zM21.30664,13.5293c-0.333,0.054 -0.34556,0.46806 -0.22656,1.03906c0.067,0.321 0.18631,0.59367 0.32031,0.76367c0.165,-0.021 0.33109,-0.021 0.49609,0c0.089,-0.205 0.10539,-0.55645 0.02539,-0.93945c-0.119,-0.57 -0.28223,-0.91728 -0.61523,-0.86328zM17.48828,15.08398c-0.28213,0.034 -0.55647,0.139 -0.79297,0.3125c-0.16,0.117 -0.31106,0.27895 -0.28906,0.37695c0.045,0.2 0.53598,-0.14455 1.20898,-0.18555c0.374,-0.023 0.68388,0.09326 0.92188,0.19726c0.239,0.107 0.38536,0.17523 0.44336,0.11524c0.101,-0.104 -0.18644,-0.50317 -0.64844,-0.70117c-0.271,-0.1125 -0.56162,-0.14923 -0.84375,-0.11524zM21.78906,15.87891v0.00195c-0.409,-0.007 -0.42467,0.84456 -0.01367,0.85156c0.411,0.007 0.42567,-0.84552 0.01367,-0.85352zM18.05664,16.06055c-0.485,0.076 -0.8027,0.34806 -0.7207,0.53906c0.048,0.018 0.06234,0.04303 0.27734,-0.04297c0.319,-0.12 0.66495,-0.15552 1.00195,-0.10352c0.156,0.018 0.22967,0.02861 0.26367,-0.02539c0.078,-0.119 -0.30427,-0.42819 -0.82227,-0.36719zM20.41016,16.45117c-0.09425,0.011 -0.17741,0.05569 -0.22266,0.14844c-0.18155,0.36909 0.58025,0.73945 0.76367,0.375c0.13575,-0.27525 -0.25827,-0.55644 -0.54102,-0.52344zM8.89648,16.48047c0.9702,0.03062 1.9205,0.71575 2.14844,2.1875c0.243,1.584 -0.25022,3.12684 -1.82422,3.08984l0.00195,0.00195c-1.22,-0.033 -2.53697,-1.13159 -2.66797,-2.43359c-0.18562,-1.84331 1.0944,-2.88507 2.3418,-2.8457zM8.82617,17.40039c-0.35937,-0.01075 -0.70494,0.14928 -0.89844,0.36328c-0.466,0.513 -0.46658,1.25811 -0.26758,1.28711c0.228,0.03 0.21853,-0.34509 0.39453,-0.62109c0.206,-0.318 0.63122,-0.40912 0.94922,-0.20313c0.002,0.001 0.00386,0.00191 0.00586,0.00391c0.62,0.406 0.07209,0.9483 0.12109,1.5293c0.074,0.892 0.9853,0.87447 1.1543,0.48047c0.022,-0.04 0.01728,-0.089 -0.01172,-0.125c0.002,0.048 0.03726,-0.06753 -0.17774,-0.01953l-0.00195,0.00195c-0.071,0.017 -0.32113,0.079 -0.45312,-0.125c-0.278,-0.428 0.59416,-1.08911 0.16016,-1.91211c-0.243,-0.467 -0.61523,-0.64941 -0.97461,-0.66016z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="px-2" id="selectedCount">MailChimp</span>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">Develop a mobile app aim..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-green-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-yellow-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-blue-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex items-center border-t p-2">
+                            <span
+                                class="border border-[#043927] bg-[#98FB98] text-[#043927] hover:bg-[#6fd070] hover:text-[#022c18] rounded-lg px-1">SAAS</span>
+                            <span
+                                class="border border-[#8B8000] bg-[#FFEA00] hover:bg-[#FFF7AD] text-[#8B8000] rounded-lg px-1 m-1">Mobile</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#TechInnovation</span>
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-2 m-1">#CloudBased</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span
+                                class="border border-[#151B54] bg-[#82CAFF] text-[#151B54] hover:bg-[#a4d8ff] rounded-lg px-1">Tomorrow</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <input class="me-2" type="checkbox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0,0,256,256" style="fill:#FAB005;">
+                                        <g fill="#f3f200" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                                        </g>
+                                        <g fill="#0000f7" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(5.12,5.12)">
+                                                <path
+                                                    d="M11.40625,2c-1,0 -1.89453,0.6875 -2.09375,1.6875c0,0 -5.89844,27.00781 -7,32.40625c-0.19922,1.10156 0.07422,1.69531 0.375,2.09375c0.39844,0.5 1.01172,0.8125 1.8125,0.8125h7.5l5.90625,-27.1875c0.19922,-1 1.10547,-2.8125 3.90625,-2.8125h16.1875c-1.39844,-4.60156 -5.89453,-7 -10.09375,-7zM22,11.09375l-1.59375,0.3125c-0.30078,0.19922 -0.49219,0.60547 -0.59375,0.90625l-2.40625,11.1875c0.69922,-0.30078 1.38672,-0.40625 2.1875,-0.40625h7.21875c6.39844,0 9.98828,-2.58594 11.1875,-8.1875c0.19922,-1 0.3125,-1.79297 0.3125,-2.59375l-0.125,-1.125v-0.09375zM40.09375,11.3125l0.09375,0.6875c0.10156,1 -0.08203,1.89453 -0.28125,3.09375c-1.39844,6.5 -5.91797,9.8125 -13.21875,9.8125h-7.1875c-1.60156,0 -2.69922,0.69922 -3,2c-0.39844,1.80078 -3.89844,18.29297 -4,18.59375c-0.10156,0.5 0.00781,1.1875 0.40625,1.6875c0.30078,0.39844 0.78125,0.8125 1.78125,0.8125h8c1,0 1.92578,-0.71094 2.125,-1.8125c0.89844,-3.80078 2.08594,-9.57422 2.1875,-9.875c0,-0.10156 0.09375,-0.3125 0.09375,-0.3125h5.3125c7.80078,0 13.69531,-4.6875 15.09375,-12.1875c1,-4.60156 -0.29297,-7.52344 -1.59375,-9.125c-1.80078,-2.30078 -5.11328,-3.375 -5.8125,-3.375z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="px-2" id="selectedCount">PayPal</span>
+
+                                </div>
+
+                                <div class="text-gray-700">
+                                    <i class="fa-regular fa-clone"></i>
+                                    <span>7</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">This program could inclu..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-green-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-blue-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-yellow-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-red-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-pink-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex items-center border-t p-2">
+                            <span
+                                class="border border-[#043927] bg-[#98FB98] text-[#043927] hover:bg-[#6fd070] hover:text-[#022c18] rounded-lg px-1 mt-2">Marketplace</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#BuySellOnline</span>
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-2 m-1">#OnlineMarketing</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-[#043927] bg-[#98FB98] text-[#043927] hover:bg-[#6fd070] hover:text-[#022c18] rounded-lg px-1">In 6 hours</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex items-center">
+                                <input class="me-2" type="checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                    viewBox="0,0,256,256" style="fill:#FAB005;">
+                                    <g fill="#00003c" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M19.986,25.212c0,0 0.562,-0.878 1.545,-1.264c0.983,-0.386 0.667,0.562 0.141,0.948c-0.528,0.386 -1.055,0.492 -1.686,0.316zM20.512,23.631c-0.913,0.176 -1.194,0.667 -1.089,1.194c0.141,-0.421 1.089,-1.193 1.089,-1.194zM34.771,27.882c-0.387,0.351 -1.159,1.616 -1.159,1.616c0,0 1.194,-0.141 1.546,-1.089c0.35,-0.949 -0.001,-0.878 -0.387,-0.527zM10.398,28.83c0.667,0.597 1.861,1.089 1.861,1.089l0.07,-2.247c-0.526,0 -1.755,0.316 -2.072,0.386c-0.316,0.069 -0.527,0.175 0.141,0.772zM46,13v24c0,4.963 -4.038,9 -9,9h-24c-4.962,0 -9,-4.037 -9,-9v-24c0,-4.963 4.038,-9 9,-9h24c4.962,0 9,4.037 9,9zM13.541,21.934l0.572,0.223c0.073,0.006 0.143,-0.029 0.182,-0.091c2.349,-3.742 6.583,-6.256 11.456,-6.256c5.798,0 10.708,3.552 12.578,8.508c0.029,0.076 0.1,0.127 0.182,0.127h0.596c0.07,0 0.12,-0.071 0.097,-0.137c-1.904,-5.398 -7.217,-9.294 -13.46,-9.294c-5.214,0 -9.786,2.724 -12.282,6.764c-0.041,0.064 0.004,0.149 0.079,0.156zM15.911,23.843c-2.81,-1.37 -3.793,-1.546 -5.971,-1.405c-2.177,0.141 -2.177,1.229 -1.651,1.265c0.311,0.021 0.487,0.044 0.58,0.055c0.078,0.009 0.089,-0.011 0.115,-0.046c0.022,-0.03 0.032,-0.075 0.043,-0.102c0.019,-0.049 -0.003,-0.099 -0.047,-0.118c-0.045,-0.02 -0.55,-0.245 -0.55,-0.245c0,0 2.74,-0.702 6.146,0.948c3.406,1.65 4.285,3.793 3.337,4.847c-0.948,1.054 -2.599,1.581 -4.636,1.124c-0.035,-1.44 0.035,-2.494 0.035,-2.494c0,0 1.897,-0.07 2.389,0.281c0.42,0.3 0.174,0.497 -0.103,0.614c-0.047,0.02 -0.052,0.107 -0.009,0.132c0.393,0.218 0.706,0.269 0.99,-0.078c0.316,-0.386 0.667,-2.037 -3.196,-1.932c-0.07,-0.667 0.141,-1.124 -0.421,-1.791c-0.562,-0.67 -0.562,1.824 -0.562,1.824c0,0 -1.44,0.21 -2.634,1.054c-1.194,0.843 2.458,2.88 2.458,2.88c0,0 0.07,0.913 0.597,1.019c0.527,0.105 0.492,-0.667 0.492,-0.667c0,0 3.16,0.913 5.269,-0.948c2.106,-1.863 0.139,-4.848 -2.671,-6.217zM19.74,25.844c0.562,0.247 1.65,0.071 2.353,-0.632c0.702,-0.702 1.019,-2.002 -0.21,-1.932c0,0 -0.457,-0.597 -1.44,-0.316c-0.983,0.281 -2.212,1.581 -1.334,2.423c-0.001,0.386 0.105,1.124 0.631,0.457zM20.723,30.305c0,-0.527 -0.035,-2.634 -0.106,-3.056c-0.07,-0.421 -0.456,-0.773 -0.667,-0.351c0,0 -0.176,2.037 -0.106,3.301c0.036,0.528 0.879,0.632 0.879,0.106zM22.654,27.53c0.737,-0.07 1.265,-0.106 1.897,-0.21c0.632,-0.105 0.667,-0.562 0.175,-0.667c0,0 -1.932,-0.421 -3.231,0.421c-0.632,0.421 -0.457,1.194 -0.106,1.229c0.351,0.035 2.142,0.106 2.564,0.386c0.421,0.281 0.527,0.492 0.07,0.773c-0.457,0.281 -1.475,0.421 -1.897,0.281c-0.421,-0.141 -0.562,-0.878 0.21,-0.492c0.773,0.386 2.177,-0.07 1.229,-0.386c-0.948,-0.316 -1.72,-0.245 -2.212,0.106c-0.492,0.351 0.176,1.089 0.737,1.334c0.562,0.245 1.616,0.316 2.248,-0.07c0.632,-0.386 0.948,-1.861 -0.07,-2.107c-1.019,-0.245 -1.651,-0.21 -2.107,-0.281c-0.455,-0.071 -0.244,-0.246 0.493,-0.317zM27.783,26.338c-1.089,-1.265 -0.528,0.525 -0.457,0.841c0.07,0.316 0.351,1.51 0.351,2.002c-0.351,-0.527 -0.913,-1.581 -1.405,-2.072c-0.492,-0.492 -0.632,-0.07 -0.632,-0.07c0,0 -0.492,1.791 -0.351,2.95c0.141,1.159 0.737,0.351 0.773,0c0.035,-0.351 0.106,-1.51 0.106,-1.826c0.316,0.702 0.808,1.51 1.194,1.897c0.386,0.386 0.773,0.141 0.913,-0.21c0.14,-0.351 0.597,-2.248 -0.492,-3.512zM31.54,29.917c0.386,-0.316 -0.071,-0.631 -0.457,-0.595c-0.386,0.035 -1.51,0.21 -1.51,0.21l0.245,-0.737c0,0 0.737,0.035 1.334,-0.035c0.597,-0.07 0.176,-0.737 -0.035,-0.737c-0.21,0 -0.983,0 -0.983,0l0.176,-0.492c0,0 1.299,-0.035 1.72,-0.106c0.421,-0.07 -0.245,-0.773 -0.737,-0.808c-0.492,-0.035 -1.546,0.106 -2.248,0.245c-0.702,0.141 0.457,0.667 0.457,0.667c0,0 -0.106,0.351 -0.245,0.597c-0.421,0.07 -0.386,0.316 -0.245,0.632c-0.281,0.737 -0.421,1.651 0.386,1.932c0.808,0.28 1.756,-0.458 2.142,-0.773zM35.826,27.882c0.105,-1.476 -1.23,-1.159 -1.757,-0.632c-0.527,0.527 -1.44,1.897 -1.44,1.897c0.106,-0.913 0.351,-1.159 0.913,-2.072c0.48,-0.78 -0.281,-0.492 -0.281,-0.492c0,0 -1.791,1.51 -1.019,3.231c-0.527,1.299 -1.37,3.16 -0.141,4.144c0.316,0.21 0.21,-0.421 0.316,-0.773c0.106,-0.351 0.457,-2.142 0.808,-2.634c0.845,-0.07 2.355,-0.386 2.601,-2.669zM42.004,27.786c0.003,-0.063 -0.05,-0.115 -0.115,-0.115h-2.114c-0.044,-0.699 -0.128,-1.445 -0.282,-2.146c-0.009,-0.039 -0.041,-0.07 -0.081,-0.073c-0.287,0 -0.331,0.002 -0.601,0.002c-0.078,0.002 -0.131,0.075 -0.111,0.149c0.088,0.323 0.216,1.147 0.258,2.067h-2.008c-0.062,0 -0.114,0.051 -0.117,0.112l-0.053,0.532c-0.004,0.085 0.069,0.155 0.154,0.146l2.048,0.007c0.012,0.754 0.018,1.207 -0.046,2.004c-0.008,0.053 0.033,0.098 0.087,0.101c0.322,0.02 0.526,0.045 0.647,0.047c0.049,0.001 0.089,-0.036 0.093,-0.085c0.019,-0.256 0.068,-1.06 0.044,-2.064l2.08,0.007c0.065,0 0.117,-0.053 0.117,-0.118z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="px-2" id="selectedCount">Disney</span>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">Introduce a B2B solution f..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-orange-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-yellow-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex items-center border-t p-2">
+                            <span class="border border-[#8B4000] bg-[#FFD580] hover:bg-[#FFE8B3] text-[#8B4000] rounded-lg px-1">B2B</span>
+                            <span
+                                class="border border-[#8B8000] bg-[#FFEA00] hover:bg-[#FFF7AD] text-[#8B8000] rounded-lg px-1 m-1">B2C</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#BusinessPartnership</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-[#A94064] bg-[#FDD9E5] text-[#A94064] hover:bg-[#FDC9D9] hover:text-[#8B0000] rounded-lg px-1">No contact</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <input class="me-2" type="checkbox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19"
+                                        viewBox="0,0,256,256" style="fill:#FAB005;">
+                                        <g fill="#0000f7" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                                        </g>
+                                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(8,8)">
+                                                <path
+                                                    d="M5,5v22h22v-22zM7,7h18v18h-18zM16.00195,9c-0.31825,0 -0.63672,0.21131 -0.63672,0.63281v9.2168c0,0.843 1.27344,0.843 1.27344,0v-9.2168c0,-0.4215 -0.31847,-0.63281 -0.63672,-0.63281zM12.82227,9.31836c-0.31825,0 -0.63672,0.21131 -0.63672,0.63281v8.49219c0,0.843 1.27148,0.843 1.27148,0v-8.49219c0,-0.4215 -0.31652,-0.63281 -0.63476,-0.63281zM19.17773,9.31836c-0.31825,0 -0.63672,0.21131 -0.63672,0.63281v8.49219c0,0.843 1.27344,0.843 1.27344,0v-8.49219c0,-0.4215 -0.31847,-0.63281 -0.63672,-0.63281zM9.64063,10.5918c-0.31825,0 -0.63477,0.21131 -0.63477,0.63281v5.7168c0,0.843 1.27148,0.843 1.27148,0v-5.7168c0,-0.4215 -0.31847,-0.63281 -0.63672,-0.63281zM22.35742,10.5918c-0.31825,0 -0.63672,0.21131 -0.63672,0.63281v5.7168c0,0.843 1.27344,0.843 1.27344,0v-5.7168c0,-0.4215 -0.31847,-0.63281 -0.63672,-0.63281zM22.43164,19.79883c-0.15681,-0.02194 -0.32758,0.019 -0.48633,0.15625c-2.69,2.295 -9.08367,2.354 -11.88867,0c-0.639,-0.545 -1.46517,0.4218 -0.82617,0.9668c3.252,2.784 10.44202,2.682 13.54102,0c0.47625,-0.41175 0.13059,-1.05723 -0.33984,-1.12305z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="px-2" id="selectedCount">Intercom</span>
+                                </div>
+
+                                <div class="text-gray-700">
+                                    <i class="fa-regular fa-clone"></i>
+                                    <span>9</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">Implement an AI-driven..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-blue-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-green-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-pink-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-purple-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex items-center border-t p-2">
+                            <span
+                                class="border border-[#151B54] bg-[#82CAFF] hover:bg-[#a4d8ff] text-[#151B54] rounded-lg px-1">Technology</span>
+                            <span
+                                class="border border-[#043927] bg-[#98FB98] text-[#043927] hover:bg-[#6fd070] hover:text-[#022c18] rounded-lg px-1 m-1">SAAS</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#SmartFinance</span>
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-2 m-1">#SaaSProduct</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-[#043927] bg-[#98FB98] text-[#043927] hover:bg-[#6fd070] hover:text-[#022c18] rounded-lg px-1">In 1 hour</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <input class="me-2" type="checkbox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#FFC107"
+                                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+                                        </path>
+                                        <path fill="#FF3D00"
+                                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+                                        </path>
+                                        <path fill="#4CAF50"
+                                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+                                        </path>
+                                        <path fill="#1976D2"
+                                            d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                                        </path>
+                                    </svg>
+                                    <span class="px-2" id="selectedCount">Google</span>
+                                </div>
+
+                                <div class="text-gray-700">
+                                    <i class="fa-regular fa-clone"></i>
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">Offer a comprehensive cy..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-orange-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-purple-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-green-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-pink-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-yellow-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-orange-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-blue-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex justify-between border-t p-2">
+                            <span
+                                class="border border-[#8B4000] bg-[#FFD580] hover:bg-[#FFE8B3] text-[#8B4000] rounded-lg whitespace-nowrap px-1 m-1">Finance</span>
+                            <span
+                                class="border border-[#800080] bg-[#C8A2C8] hover:bg-[#E0C4E0] text-[#800080] rounded-lg whitespace-nowrap px-1 m-1">Automation</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#SmartFinance</span>
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-2 m-1">#WorkFinance</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-[#043927] bg-[#98FB98] text-[#043927] hover:bg-[#6fd070] hover:text-[#022c18] rounded-lg px-1">In 30 minutes</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex items-center">
+                                <input class="me-2" type="checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                    viewBox="0,0,256,256">
+                                    <g fill="#94d82d" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                                    </g>
+                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M20,2c-2.75781,0 -5,2.24219 -5,5v5c0,0.55078 -0.44922,1 -1,1h-5c-2.16016,0 -3.9375,1.74219 -3.96094,3.88672c-0.04687,4.40234 0.43359,8.64453 1.27344,11.34375c0.96484,3.07422 2.88672,5.06641 5.40625,5.60938l7.07031,1.60938c1.08594,0.23047 2.19141,0.01172 3.10547,-0.61719c0.91406,-0.62891 1.51563,-1.57812 1.69531,-2.76562l0.16016,-2.33594c1.14844,1.4375 3.05078,2.26953 5.25,2.26953h3c2.20703,0 4,1.79297 4,4v3c0,1.65234 -1.34766,3 -3,3h-2.89453c-0.53516,0 -1.01953,-0.35937 -1.08984,-0.82422c-0.05078,-0.30469 0.02734,-0.59375 0.21875,-0.82031c0.19141,-0.22656 0.47266,-0.35547 0.76563,-0.35547h2c0.55469,0 1,-0.44922 1,-1v-4c0,-0.55078 -0.44531,-1 -1,-1h-3c-3.30859,0 -6,2.69141 -6,6v2c0,3.30859 2.69141,6 6,6h5c10,0 10,-14.18359 10,-21c0,-6.90625 -0.16406,-11.42578 -1.03125,-15.53125c-0.6875,-3.24219 -2.64453,-5.14844 -5.86719,-5.66406c-0.26172,-0.02734 -5.96484,-0.60547 -9.26172,-0.77344c-0.55469,-1.65625 -2.44922,-3.03125 -4.43359,-3.03125zM13.45313,4.54688l-7.0625,7.0625c0.78906,-0.38672 1.67578,-0.60937 2.60938,-0.60937h4v-4c0,-0.86328 0.16406,-1.6875 0.45313,-2.45312zM34.5,20c1.38281,0 2.5,1.12109 2.5,2.5c0,0.59375 -0.21484,1.12891 -0.55859,1.55859c-0.75781,-0.62891 -2.23047,-1.05859 -3.94141,-1.05859c-0.15234,0 -0.29687,0.01172 -0.44141,0.01953c-0.03906,-0.16797 -0.05859,-0.33984 -0.05859,-0.51953c0,-1.38281 1.11719,-2.5 2.5,-2.5z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="px-2" id="selectedCount">Evernote</span>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">This could include smart E..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-yellow-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-red-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex items-center border-t p-2">
+                            <span
+                                class="border border-[#8B8000] bg-[#FFEA00] hover:bg-[#FFF7AD] text-[#8B8000] rounded-lg px-1">Transportation</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#LogisticTech</span>
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-2 m-1">#UX</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1">Next month</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <input class="me-2" type="checkbox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#ff5722" d="M6 6H22V22H6z" transform="rotate(-180 14 14)"></path>
+                                        <path fill="#4caf50" d="M26 6H42V22H26z" transform="rotate(-180 34 14)"></path>
+                                        <path fill="#ffc107" d="M26 26H42V42H26z" transform="rotate(-180 34 34)"></path>
+                                        <path fill="#03a9f4" d="M6 26H22V42H6z" transform="rotate(-180 14 34)"></path>
+                                    </svg>
+                                    <span class="" id="selectedCount">Microsoft</span>
+                                </div>
+
+                                <div class="text-gray-700">
+                                    <i class="fa-regular fa-clone"></i>
+                                    <span>11</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">Launch an advisory service..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-purple-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-orange-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-pink-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-yellow-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span
+                                class="border border-[#800080] bg-[#C8A2C8] hover:bg-[#E0C4E0] text-[#800080] rounded-lg px-1 m-1">Publishing</span>
+                            <span
+                                class="border border-[#8B4000] bg-[#FFD580] hover:bg-[#FFE8B3] text-[#8B4000] rounded-lg px-1 m-1">B2C</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#B2CMarketing</span>
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-2 m-1">#RentalIT</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-[#A94064] bg-[#FDD9E5] text-[#A94064] hover:bg-[#FDC9D9] hover:text-[#8B0000] rounded-lg px-1">No contact</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border p-2">
+                            <div class="flex items-center">
+                                <input class="me-2" type="checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                    viewBox="0,0,256,256">
+                                    <g fill="#ff006c" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+                                    </g>
+                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(8,8)">
+                                            <path
+                                                d="M5,5v22h22v-22zM7,7h18v18h-18zM12.90234,10c-0.5685,0.00375 -1.13422,0.38281 -1.13672,1.13281c0,0.64 0.52125,1.15039 1.15625,1.15039c0.179,-0.005 1.14981,-0.17097 1.13281,-1.16797c-0.0125,-0.748 -0.58384,-1.11898 -1.15234,-1.11523zM19.60352,13.20313c-0.8488,0.07102 -1.77658,0.65886 -2.42383,1.86523l0.37891,-1.72461h-2.93164l-0.41211,1.51563h1.375l-0.84375,3.38477c-0.703,1.564 -2.44531,1.87928 -2.44531,0.98828c0.013,-0.481 -0.03161,-0.19067 1.40039,-5.88867h-3.25586l-0.41211,1.51758h1.35547c-0.942,3.839 -0.97647,3.82655 -0.98047,4.43555c0,2.075 2.68925,2.39059 4.03125,0.18359l-0.3457,1.38477h1.92188l1.09961,-4.40234c0.627,-2.544 3.15373,-2.0063 2.55273,-0.0293c-0.388,1.39 -1.73155,4.54297 1.06445,4.54297c1.014,0 1.82058,-0.6528 2.26758,-2.2168l-0.76172,-0.28516c-0.609,1.683 -1.35547,1.37975 -1.35547,0.71875c0.013,-0.345 0.02977,-0.32786 0.63477,-2.50586c0.695,-2.285 -0.49939,-3.60274 -1.91406,-3.48437z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="px-2" id="selectedCount">Invision</span>
+                            </div>
+                        </td>
+                        <td class="border whitespace-nowrap p-2">This tool would analyze tre..</td>
+                        <td class="border p-2">
+                            <div class="flex items-center h-8 w-8 rounded-full">
+                                <i class="fa-solid fa-circle-user text-gray-500 -ml-1"></i>
+                                <i class="fa-solid fa-circle-user text-blue-500 -ml-1"></i>
+                            </div>
+                        </td>
+                        <td class="flex items-center border-t p-2">
+                            <span class="border border-[#151B54] bg-[#82CAFF] hover:bg-[#a4d8ff] text-[#151B54] rounded-lg px-1 mt-2">Web Services</span>
+                        </td>
+                        <td class="border py-2 pl-2">
+                            <div class="flex w-48 overflow-hidden">
+                                <span
+                                    class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1 m-1">#AIIntegration</span>
+                            </div>
+                        </td>
+                        <td class="border p-2">
+                            <span class="border border-gray-500 bg-[#ececec] text-gray-500 hover:bg-[#d4d4d4] hover:text-gray-700 rounded-lg px-1">Next month</span>
+                        </td>
+                        <td class="border"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="border text-gray-500 pl-20 py-4">10 count</td>
+                        <td class="border text-gray-500 pl-16 py-4">+ Add calculation</td>
+                        <td class="border text-gray-500 whitespace-nowrap pl-4 pr-2 py-4">+ Add calculation</td>
+                        <td class="border text-gray-500 pl-12 py-4">+ Add calculation</td>
+                        <td class="border text-gray-500 whitespace-nowrap pl-6 pr-2 py-4">+ Add calculation</td>
+                        <td class="border p-2"></td>
+                        <td class="border"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="flex justify-center items-center border rounded-xl mt-48 ml-72" style="width: fit-content;">
+                <div class="m-3">
+                    <input type="checkbox" id="countCheckbox">
+                    <span>Selected</span>
+                </div>
+                <div class="border rounded-lg p-1 m-1">
+                    <i class="fa-solid fa-box-archive"></i>
+                    <span>Archive</span>
+                </div>
+                <div class="border rounded-lg p-1 m-1">
+                    <i class="fa-regular fa-trash-can" style="color: rgb(218, 17, 17);"></i>
+                    <span style="color: rgb(218, 17, 17);">Delete</span>
+                </div>
+                <div class="border rounded-lg p-1 m-1">
+                    <span>More</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="m-3">X</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-dropdown').forEach(item => {
+            item.addEventListener('click', () => {
+                const submenu = item.parentElement.nextElementSibling;
+                submenu.classList.toggle('hidden');
+            });
+        });
+
+        // Function to update the selected count
+        function updateSelectedCount() {
+            // Select all the checkboxes in the table
+            const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
+
+            // Count the number of checked checkboxes
+            const selectedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+
+            // Update the selected count in the "Selected" section
+            const selectedSpan = document.querySelector('#countCheckbox span');
+            selectedSpan.textContent = selectedCount;
+        }
+
+        // Add event listener to the countCheckbox
+        const countCheckbox = document.querySelector('#countCheckbox');
+        countCheckbox.addEventListener('click', updateSelectedCount);
+
+        document.getElementById('searchInput').addEventListener('input', function () {
+            // Get the value entered by the user
+            const searchValue = this.value.trim().toLowerCase();
+
+            // Select all the rows in the table body
+            const rows = document.querySelectorAll('tbody tr');
+
+            // Loop through each row and check if it contains the search value
+            rows.forEach(row => {
+                const brand = row.querySelector('td:first-child span').textContent.toLowerCase();
+                if (brand.includes(searchValue)) {
+                    // If the row contains the search value, display it
+                    row.style.display = 'table-row';
+                } else {
+                    // If the row does not contain the search value, hide it
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
